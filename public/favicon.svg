@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .shamrock { fill: #2D5F4C; }
+    </style>
+  </defs>
+
+  <!-- Three-leaf shamrock design -->
+  <!-- Left leaf -->
+  <circle cx="35" cy="45" r="18" class="shamrock"/>
+
+  <!-- Right leaf -->
+  <circle cx="65" cy="45" r="18" class="shamrock"/>
+
+  <!-- Top leaf -->
+  <circle cx="50" cy="28" r="18" class="shamrock"/>
+
+  <!-- Center overlap -->
+  <circle cx="50" cy="45" r="12" class="shamrock"/>
+
+  <!-- Stem -->
+  <path d="M 50 57 Q 48 70, 45 85 L 55 85 Q 52 70, 50 57 Z" class="shamrock"/>
+</svg>

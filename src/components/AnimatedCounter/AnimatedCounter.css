@@ -1,0 +1,29 @@
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.counter-value {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-accent-green-dark);
+    margin-bottom: var(--spacing-xs);
+    line-height: 1;
+}
+
+.counter-label {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .counter-value {
+        font-size: 3.5rem;
+    }
+}

@@ -1,0 +1,104 @@
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg) 0;
+}
+
+.timeline-item {
+    display: flex;
+    position: relative;
+    padding-bottom: var(--spacing-xl);
+}
+
+.timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: var(--spacing-lg);
+    min-width: 20px;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--color-accent-green-dark);
+    border: 3px solid var(--color-primary-white);
+    box-shadow: 0 0 0 2px var(--color-accent-green-dark);
+    z-index: 2;
+    margin-top: 6px;
+}
+
+.timeline-line {
+    flex-grow: 1;
+    width: 2px;
+    background-color: var(--color-accent-green-light);
+    opacity: 0.3;
+    margin-top: 4px;
+}
+
+.timeline-content {
+    flex-grow: 1;
+    background-color: var(--color-primary-white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-gray-medium);
+    transition: box-shadow var(--transition-normal);
+}
+
+.timeline-content:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent-green-subtle);
+}
+
+.timeline-date {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-accent-green-dark);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    display: inline-block;
+    background-color: var(--color-accent-green-subtle);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+}
+
+.timeline-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-text-dark);
+}
+
+.timeline-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline-body {
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+}
+
+.timeline-description {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+    .timeline-content {
+        padding: var(--spacing-lg);
+    }
+
+    .timeline-title {
+        font-size: 1.5rem;
+    }
+}
