@@ -29,6 +29,15 @@ const projects: Project[] = [
     },
     {
         id: 2,
+        title: "Financial Statement Analysis - CEAT Limited",
+        category: "Comprehensive Analysis",
+        description: "Complete financial statement analysis of CEAT Limited covering balance sheet, P&L, ratios, debt, cost structure, and operating leverage.",
+        metrics: "6 comprehensive analyses",
+        icon: "🚗",
+        tags: ["CEAT", "Tire Industry", "Complete Analysis"]
+    },
+    {
+        id: 3,
         title: "Infosys FY25 Deep Dive",
         category: "Equity Research",
         description: "Comprehensive financial analysis of Infosys for FY25, highlighting growth drivers and risks.",
@@ -37,7 +46,7 @@ const projects: Project[] = [
         tags: ["IT Sector", "Financial Modeling"]
     },
     {
-        id: 3,
+        id: 4,
         title: "DuPont ROE Analysis",
         category: "Financial Analysis",
         description: "Detailed DuPont analysis for 5 major companies to decompose Return on Equity drivers.",
@@ -46,7 +55,7 @@ const projects: Project[] = [
         tags: ["ROE", "Ratio Analysis"]
     },
     {
-        id: 4,
+        id: 5,
         title: "Working Capital Analysis",
         category: "Operational Efficiency",
         description: "Cash Conversion Cycle (CCC) analysis spanning from IT sector to Hospitality industry.",

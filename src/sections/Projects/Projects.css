@@ -115,6 +115,22 @@
 
 @media (min-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /* First row: 3 cards, each spanning 2 columns */
+    .projects-grid > div:nth-child(1),
+    .projects-grid > div:nth-child(2),
+    .projects-grid > div:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    /* Second row: 2 cards centered, each spanning 2 columns with 1 column offset */
+    .projects-grid > div:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .projects-grid > div:nth-child(5) {
+        grid-column: 4 / span 2;
     }
 }
