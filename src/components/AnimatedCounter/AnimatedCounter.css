@@ -4,22 +4,55 @@
     align-items: center;
     text-align: center;
     padding: var(--spacing-md);
+    position: relative;
+}
+
+/* Subtle background glow on hover */
+.counter-container::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle,
+        rgba(45, 95, 76, 0.08) 0%,
+        transparent 70%
+    );
+    opacity: 0;
+    transition: opacity var(--duration-slow) var(--ease-out-cubic);
+    z-index: -1;
+}
+
+.counter-container:hover::before {
+    opacity: 1;
 }
 
 .counter-value {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--color-accent-green-dark);
+    background: linear-gradient(135deg,
+        var(--color-accent-green-dark) 0%,
+        var(--color-accent-green-light) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: var(--spacing-xs);
     line-height: 1;
+    letter-spacing: -0.02em;
+    transition: transform var(--duration-normal) var(--ease-out-cubic);
+}
+
+.counter-container:hover .counter-value {
+    transform: scale(1.05);
 }
 
 .counter-label {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: var(--color-text-secondary);
     font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
